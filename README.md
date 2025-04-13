@@ -71,3 +71,22 @@ The **python-mcp-server** project is a Flask-based web server designed to intera
 ### **Missing Pieces (Likely Extended Elsewhere)**
 - **Minecraft Plugin**: This repo is *only the server*; a Spigot/Bukkit plugin would communicate with it.  
 - **Real-time Features**: No WebSocket/Socket.IO usage (would need Redis or similar for scaling).  
+
+---
+
+### **Task Generation**
+#### **Overview**
+The task generation feature allows you to automatically generate tasks for coding plans based on the project structure. This can be useful for planning and organizing your development work.
+
+#### **How to Use**
+1. Ensure you have the necessary dependencies installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Use the task generator script to generate tasks:
+   ```bash
+   python server/task_generator.py
+   ```
+
+#### **Dependencies**
+- OpenAI library (added to `requirements.txt`)
